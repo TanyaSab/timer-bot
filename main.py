@@ -3,8 +3,8 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from datetime import datetime
 import time
 
-TOKEN = "vk1.a.h2B5HlNCKPX_Rm9xscgN7XxOdxDEhAENrZKcoQHCyXvfLu12YGJgFcqydSQX6JGlZV7OXE1s4Iz7Xez-7y0k_88aidNEvk1o3uVGG1U6zGjixqRzamPVMtzpFXjM1s0HngRlbZBOO451_exNlDhQ-5jR3Z7mk6j7Wz0hWMQd2qpSDbMLGlTkFdSvX6zH0pETy2k_Y-wAj9BiZyo7nWqafg"
-GROUP_ID = 233902137
+TOKEN = os.getenv("VK_TOKEN")
+GROUP_ID = int(os.getenv("GROUP_ID"))
 API_VERSION = '5.199'
 vk_session = vk_api.VkApi(token=TOKEN)
 vk = vk_session.get_api()
