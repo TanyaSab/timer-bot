@@ -2,6 +2,7 @@ import vk_api
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from datetime import datetime
 import time
+import os
 
 TOKEN = os.getenv("VK_TOKEN")
 GROUP_ID = int(os.getenv("GROUP_ID"))
